@@ -313,9 +313,13 @@ def add_notice(request):
         ('You are not an Chairman')
 
 
-def delet_event(request):
-    
-    pass
+def delete_account(request):
+    print(request.POST)
+    user=User.objects.get(Email = request.session['email'])
+    user.delete()
+    return redirect(signin_page)
+
+
 
 
 

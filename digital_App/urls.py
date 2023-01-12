@@ -41,7 +41,10 @@ urlpatterns = [
     path("profile_data/", profile_data, name='profile_data'),
     path("profile_data_2/", profile_data_2, name='profile_data_2'),
 
-    path("delet_event/", delet_event, name='delet_event')
+    
+    
+    path("delete_account/", delete_account, name='delete_account'),
+    # path("delet_event/", delet_event, name='delet_event')
     
 
 ]
