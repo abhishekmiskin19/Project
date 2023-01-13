@@ -140,10 +140,10 @@ def signin(request):
             return redirect(profile_page)
 
         else:
-            return render(request, 'signin_page', {'error': "Password does not match"})
+            return render(request, 'signin_page.html', {'error': "Password does not match"})
 
     except User.DoesNotExist as err:
-        return render(request, 'signin_page', {'error': "User does not Exists Please SignUp"})
+        return render(request, 'signin_page.html', {'error': "User does not Exists Please SignUp"})
 
 
 # Logout Logic
