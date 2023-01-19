@@ -319,18 +319,8 @@ def delete_account(request):
     user.delete()
     return redirect(signin_page)
 
+def add_event(request):
+    pass
 
 
 
-
-
-#    def add_event(request):
-#     print(request.POST)
-
-#     Chairman == Chairman.objects.get(Email = request.session['email'])
-#     event = Event.objects.get(Chairman = Chairman)
-#     event.AddEvent = request.POST['event']
-#     event.Date = request.POST['date']
-
-#     event.save()
-#     return redirect(event_page)

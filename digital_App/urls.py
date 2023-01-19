@@ -44,7 +44,8 @@ urlpatterns = [
     
     
     path("delete_account/", delete_account, name='delete_account'),
-    # path("delet_event/", delet_event, name='delet_event')
+    path("add_event/", add_event, name='add_event'),
+    
     
 
 ]
