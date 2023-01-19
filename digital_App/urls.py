@@ -44,7 +44,7 @@ urlpatterns = [
     
     
     path("delete_account/", delete_account, name='delete_account'),
-    path("add_event/", add_event, name='add_event'),
+    path('delete_event/<str:event>',delete_event,name='delete_event'),
     
     
 

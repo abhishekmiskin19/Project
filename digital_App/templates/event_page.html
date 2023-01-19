@@ -525,7 +525,7 @@
                             <!-- <div class="col-sm-6"> -->
                                 <div class="card widget-flat mt-2">
                                     <div class="card-body">
-                                        <h5 class="mt-0" style="color: red; font-weight: 1000; font-size: large;">Event</h5>
+                                        <h5 class="mt-0" style="color: rgb(0, 255, 94); font-weight: 1000; font-size: large;">Event</h5>
                                         <div class="float-end">
                                             <i class="mdi mdi-account-multiple widget-icon"></i>
                                         </div>
@@ -536,6 +536,7 @@
                                                 <span class="me-2" style="color: black; font-weight: 500;">Date : {{e_data.Date}}</span>
                                                 <!-- <span class="text-nowrap">Since last month</span> -->
                                             </p>
+                                            <button class="btn btn-danger"> <a style="color: white;" href="{% url 'delete_event' event=e_data.AddEvent %}"> Delete</a></button>
                                         </div>
                                         {% endfor %}
                                     </div> <!-- end card-body-->

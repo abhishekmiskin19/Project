@@ -319,8 +319,17 @@ def delete_account(request):
     user.delete()
     return redirect(signin_page)
 
-def add_event(request):
-    pass
+
+def delete_event(request, event):
+    print(request.POST)
+    events=Event.objects.get(AddEvent = event)
+    events.delete()
+    return redirect(event_page)
 
 
+def delete_notice(request, notice):
+    print(request.POST)
+    notices=Event.objects.get(AddEvent = notice)
+    notices.delete()
+    return redirect(notice_page)
 
