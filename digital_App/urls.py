@@ -40,12 +40,11 @@ urlpatterns = [
     path("load_All_Members/", load_All_Members, name='load_All_Members'),
     path("profile_data/", profile_data, name='profile_data'),
     path("profile_data_2/", profile_data_2, name='profile_data_2'),
-
     
     
     path("delete_account/", delete_account, name='delete_account'),
     path('delete_event/<str:event>',delete_event,name='delete_event'),
+    path('delete_notice/<str:notice>',delete_notice,name='delete_notice'),
     
     
-
 ]

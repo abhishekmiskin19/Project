@@ -329,7 +329,8 @@ def delete_event(request, event):
 
 def delete_notice(request, notice):
     print(request.POST)
-    notices=Event.objects.get(AddEvent = notice)
+    notices=Notice.objects.get(AddNotices = notice)
     notices.delete()
     return redirect(notice_page)
+
 
